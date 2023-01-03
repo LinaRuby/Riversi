@@ -1,0 +1,57 @@
+.cell {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(145, 253, 217);
+    border: 1px solid rgb(19, 18, 18);
+    display: inline-block;
+    /*если нужно будет внести изменения в вертикальный ряд*/
+    margin-right: -1px;
+    margin-top: -4px;
+}
+
+.cell.valid {
+    background-color: rgb(252, 159, 159);
+}
+
+.cell.selected {
+    background-color: red;
+}
+
+.mark {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.mark.black {
+    background-color: rgb(19, 18, 18);
+    border: 1px solid white;
+}
+
+.mark.white {
+    background-color: white;
+    border: 1px solid rgb(19, 18, 18);
+}
+
+@media screen and (max-width: 810px) {
+    .cell {
+        height: 9vw;
+        width: 9vw;
+        background-color: rgb(145, 253, 217);
+        border: 1px solid rgb(19, 18, 18);
+        display: inline-block;
+        margin-right: -1px;
+        margin-top: -4px;
+    }
+    .game {
+        height: 80vw;
+        width: 80vw;
+    }
+    .mark {
+        height: 7vw;
+        width: 7vw;
+        margin: 3px;
+        border-radius: 50%;
+    }
+}
